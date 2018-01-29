@@ -1,0 +1,58 @@
+Alexandre Lebert 4A IT
+
+Question 1
+
+n diamètre maximal du disque
+
++-------------------+---------------+-----------------+
+|Paramètre d'entrée | Classe valide | Classe invalide |
++-------------------+---------------+-----------------+
+|Diamètre de d si la| [ 1 , n ]     | ] 1 , n [       |
+|la tour est vide   |               |                 |
+|(d = diamètre du   |               |                 |
+|disque)            |               |                 |
++-------------------+---------------+-----------------+
+|Diamètre de d si la| 0 < d < s     | d > s, d < 0    |
+|tour n'est pas vide|               |                 |
+|(s = disque au     |               |                 |
+|sommet)            |               |                 |
++-------------------+---------------+-----------------+
+
+Question 2
+
++-------------------+---------------+-----------------+
+|Paramètre d'entrée | Classe valide | Classe invalide |
++-------------------+---------------+-----------------+
+|Diamètre de d si la| 1 , n         | 0 , n + 1       |
+|la tour est vide   |               |                 |
+|(d = diamètre du   |               |                 |
+|disque)            |               |                 |
++-------------------+---------------+-----------------+
+|Diamètre de d si la| d = 1,  s = 2 | s = 1, d = 2    |
+|tour n'est pas vide|               |                 |
+|(s = disque au     |               |                 |
+|sommet)            |               |                 |
++-------------------+---------------+-----------------+
+
+Question 3
+
+		 B 1
+		  |
+	    true P 1 false
+		/     \
+	 I1,B2 /  true P2 false
+	      /       /   \
+	     / I2,B3 /     \ B4
+	    |        |      |
+	    +--------+------+
+	             |
+		     B5
+
+Question 4
+
+P1 empty
+P2 not empty, s > d, d < s, taille < hauteurMax, taille > hauteurMax
+
+Question 5
+
+Les données couvrent tous les arcs du graphe.
