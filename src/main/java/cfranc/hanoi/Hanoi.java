@@ -5,11 +5,16 @@ public class Hanoi {
 	Tour tourInit;
 	Tour tourInter;
 	Tour tourDest;
+	int nombreDisques = 0;
 
+	// Constructeurs
+	
 	public Hanoi(int n){
-		// TODO ...
+		// Entrée : nombreDisques integer
+		this.nombreDisques = n;
 	}
 
+	// Corps de la classe
 	
 	public Hanoi(){
 		tourInit = new Tour();
@@ -24,10 +29,17 @@ public class Hanoi {
 	}
 	
 	public void bougerSommet(Tour from, Tour to) {
+		// Variables
 		tourInit = new Tour();
 		tourInter = new Tour();
 		tourDest = new Tour();
-		// TODO ...
+		
+		// Corps de la fonction
+		tourInit=from;
+		tourDest=to;
+		
+		
+		
 	}
 
 	public void deplacer(int nbDisque, Tour from, Tour to, Tour by){
@@ -52,7 +64,7 @@ public class Hanoi {
 		System.out.println(game.tourDest.estVide());
 		
 		// Compléter la classe Hanoi pour résoudre le jeux avec n disques :
-		int n =100;
+		int n = 100;
 		Hanoi gameN = new Hanoi(n);
 		System.out.println(gameN.tourInit.estVide());
 		System.out.println(gameN.tourDest.estVide());
